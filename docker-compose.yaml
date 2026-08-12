@@ -1,5 +1,6 @@
 services:
     ha-sip:
+        restart: unless-stopped
         build:
             context: ./ha-sip
             dockerfile: Dockerfile
